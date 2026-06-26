@@ -1,33 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather-app</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" />
+  </head>
+  <body>
+    <div class="container">
     <header>
-    <form>
-        <input type="search" placeholder="Enter a city.."/>
-        <input type="submit"/>
-    </form>
-        </header>
 
-    <hr>
-    <h1>Hammanskraal</h1>
-    <h2>current</h2>
-    ☀️19℃
+      <form>
+        <input class="search" type="search" placeholder="Enter a city.." />
+        <input class="submit-button" type="submit" />
+      </form>
+    </header>
+
+    <hr />
+    <h1><svg xmlns="http://www.w3.org/2000/svg" height="" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>Hammanskraal</h1>
+    
+    <span class="weather-icon" >☀️</span>
+    <span class="current-temp">19</span>
+    <span class="weather-unit">℃</span>
+    <br />
+    <br/>
+    <div class="h-w">
+    Humidity:<span class="humidity">34%</span>
     <br>
-    Humidity:47%,
-    Wind:3km/h
-    <br>
-    Wednsday 11:40,Clear sky 
-    <footer>This project was coded by <a href="https://github.com/bassie-dev" target="blank">Bassie</a>,
-        open-sourced on <a href="https://github.com/bassie-dev/Bassie-App" target="blank">Github</a> 
-        and hosted on <a href="https://app.netlify.com/projects/bassie-weather/overview" target="blank">Netlify</a>.
+    Wind Speed:<span class="wind">11km/h</span>
+    </div>
+    <br />
+    <div class="d-t">
+    <div class="weather"><strong>Weather</strong></div>
+    
+    <div class="date-time">Wednsday 11:40</div>
+    
+   <div class="current-weather"> Clear sky</div>
+    </div>
+    <footer>
+      This project was coded by
+      <a href="https://github.com/bassie-dev" target="blank">Bassie</a>,
+      open-sourced on
+      <a href="https://github.com/bassie-dev/Bassie-App" target="blank"
+        >Github</a
+      >
+      and hosted on
+      <a
+        href="https://app.netlify.com/projects/bassie-weather/overview"
+        target="blank"
+        >Netlify</a
+      >.
     </footer>
-
-
-
-</body>
+    </div>
+  </body>
 </html>
