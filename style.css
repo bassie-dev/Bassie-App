@@ -98,3 +98,6 @@ form{
     cursor: pointer;
     color: rgba(20, 20, 252, 0.938);
  }
+h1{
+    font-size: 45px;
+}
